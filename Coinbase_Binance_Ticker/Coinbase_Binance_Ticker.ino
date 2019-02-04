@@ -183,10 +183,10 @@ void configureCoins() {
   Coin ethereum = { .url = "/products/ETH-USD/ticker", .ticker = "ETH", .isCoinbaseCoin = true };
   Coin litcoin = { .url = "/products/LTC-USD/ticker", .ticker = "LTC", .isCoinbaseCoin = true };
   Coin bitcoinCash = { .url = "/products/BCH-USD/ticker", .ticker = "BCH", .isCoinbaseCoin = true };
-  Coin ethereumClassic = { .url = "/products/ETC-USD/ticker", .ticker = "ETC", .isCoinbaseCoin = true }; 
 
   
   // Lets add in some Binanace Coins
+  Coin ethereumClassic = { .url = "/api/v1/ticker/price?symbol=ETCBTC", .ticker = "ETC", .isCoinbaseCoin = false }; 
   Coin monero = { .url = "/api/v1/ticker/price?symbol=XMRBTC", .ticker = "Monero", .isCoinbaseCoin = false };
   Coin stellar = { .url = "/api/v1/ticker/price?symbol=XLMBTC", .ticker = "Stellar", .isCoinbaseCoin = false };
   Coin iota = { .url = "/api/v1/ticker/price?symbol=IOTABTC", .ticker = "IOTA", .isCoinbaseCoin = false };
@@ -197,9 +197,9 @@ void configureCoins() {
   cryptoCoins[1] =  ethereum;
   cryptoCoins[2] =  litcoin;
   cryptoCoins[3] =  bitcoinCash;
-  cryptoCoins[4] =  monero;
-  cryptoCoins[5] =  stellar;
-  cryptoCoins[6] = ethereumClassic;
+  cryptoCoins[4] = ethereumClassic;
+  cryptoCoins[5] =  monero;
+  cryptoCoins[6] =  stellar;
   cryptoCoins[7] =  iota;
   cryptoCoins[8] =  dash;
   cryptoCoins[9] =  nano;
